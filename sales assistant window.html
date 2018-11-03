@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<title> sales associate-new contract</title>
+	<style>
+		footer {
+			position:relative;
+			right: 0%;
+			bottom: 0%;
+			left: 0%;
+			background: white;
+		}
+	</style>
+</head>
+
+<body>
+<header>
+<h1> New Contract </h1>
+<!--make the sales assistant ID pop up from their log in information-->
+Sales Assistant ID:
+</header>
+<nav>
+	<a href="searchManaSales.html " >Search For Existing contract</a>
+</nav>
+
+
+<section>
+
+<!-- list of business fields-->
+	<form>
+	
+	<fieldset>
+	<legend> <b>Line of Business </b></legend>
+		<!-- populate with the db and php-->
+		<select size ="5" action = "populateLineBusiness.php">
+
+		</select>
+	</fieldset>
+		<!-- contract types that the sales associate can choose from-->
+	<fieldset>
+	<legend><b>Contract and Service Type </b></legend>
+		<select size = "5" action = "populateContractServiceType.php">
+
+		</select>
+	</fieldset>
+	<fieldset>
+	<legend><b>Company and Contact Information </b></legend>
+		Company Name: <br>
+		<input type = "text" name = "company_name" ><br>
+		<b>Contact Information of Signatory of Contract: </b><br>
+		First Name:<br>
+		<input type = "text" name = "client_f_name"><br>
+		Middle Initial:<br>
+		<input type = "text" name = "client_m_initial" ><br>
+		Last Name: <br>
+		<input type = "text" name = "client_l_name" ><br>
+		Contact Number:<br>
+		<input type = "number" name = "client_phone_num" ><br>
+		Email:<br>
+		<input type = "email" name = "client_email" ><br>
+		Street Address:<br>
+		<input type = "text" name = "street_address"><br>
+		Province: <br>
+		<!--populate with db-->
+		<select size = "5"></select><br>
+		City:<br>
+		<br>
+		<!--populate with DB-->
+		<select size = "5" action = "populateCity.php">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+
+		</select><br>
+
+	Postal Code: <br>
+	<input type ="text" name = "postal_code"><br>
+	
+	
+	</fieldset>
+	<fieldset>
+	
+	<legend> <b> Contract Information </b></legend>
+		
+		<!-- have to look into the automation of the contract IDs and how to display the infor with the php-->
+		Contract ID:<br>
+		
+		Annual Contract Value:<br>
+		<input type = "number" name = "ACV"><br>
+		Initial Amount:<br>
+		<input type = "number" name = "initial_amount"><br>
+		Start Date:<br>
+		<input type = "date" name = "start_date"><br>
+		
+	</fieldset>
+		<br><br>
+		<input type  = "submit" value = "Create New Contract"><br><br>
+	</form>
+	
+</section>
+
+
+<footer>
+Managed by AITS all rights reserved
+</footer>
+
+
+
+
+
+</body>
+
+
+
+</html>

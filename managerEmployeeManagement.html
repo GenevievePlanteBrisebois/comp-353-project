@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management</title>
+    <style>
+        footer {
+            position:absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<header><h1>Employee Management</h1></header>
+
+<nav><table style = "width: 100%">
+    <tr>
+        <th style = "width: 25%"><a href = "managerMain.html">Personal Information</a></th>
+        <th style = "width: 25%"><a href = "searchMana.html">Search Existing Contracts</a></th>
+        <th style = "width: 25%"><a href = "managerContractManagement.html">Contract Management</a></th>
+        <th style = "width: 25%"><a href = "managerReports.html">Reports</a></th>
+    </tr>
+</table></nav>
+<fieldset>
+    <select size = "10">
+        <!--fill up the table with php to get the list of employees managed by that person-->
+
+    </select><br>
+
+<input type = "submit" value  = "Select Employee">
+
+</fieldset>
+<!--This will be how things should be displayed for the employee that is selected, display will be triggered by selecting the employee-->
+
+
+<fieldset>
+    <legend><h3>Employee Information</h3></legend>
+    Contract Preference: <br>
+    Working on contract number: <br>
+    Has been working on contract for :___________ hours <br>
+    Assign to new contract:<br>
+    <select>
+        <!--  will be a selection made with the curent contracts present in the db and that fits with the critereas from the preferences ex: if preference is diamond only active diamond contracts should be in the list-->
+        <option>no assignment</option><!-- this would be to maintain an employee to no contract or to take them off from a contract without putting them on a new one-->
+    </select>
+    <br>
+    <input type = "submit" value = "Change Assignment">
+    <br>
+
+</fieldset>
+
+
+<footer>
+    Managed by AITS all rigths reserved
+</footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reports</title>
+    <style>
+        footer {
+            position:relative;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<header><h1>Report Generator</h1></header>
+<nav><table style = "width: 100%">
+    <tr>
+        <th style = "width: 25%"><a href = "managerMain.php">Personal Information</a></th>
+        <th style = "width: 25%"><a href = "searchMana.php">Search Existing Contracts</a></th>
+        <th style = "width: 25%"><a href = "managerEmployeeManagement.php">Employee Management</a></th>
+        <th style = "width: 25%"><a href = "managerContractManagement.php">Contract Management</a></th>
+    </tr>
+</table></nav>
+<fieldset>
+    <legend><h3>Deliverable Analysis</h3></legend>
+    Deliverable to Analyse:<br>
+    <select>
+        <!--fill with php the deliverable number, 1, 2, 3, final deliverable-->
+    </select><br>
+        Year:<br>
+    <input type  = "text" size  = "5" name = "year" ><br>
+    <input type = "submit" value ="Generate Report" name = "generateR1"><br>
+</fieldset>
+
+<fieldset>
+    <legend><h3>Contract Updates</h3></legend>
+        Information on the contracts recorded in the last
+<input type = "number" name ="days"> days <br>
+    Contracts recorded by:<br>
+    <input type = "text" name = "salesID" value  = "Sales Associate ID"><br>
+<input type = "submit" value ="Generate Report" name = "generateR2"><br>
+</fieldset>
+
+<fieldset>
+    <legend><h3>Line Of Business</h3></legend>
+    Select Line Of Business:<br>
+    <select size  = "4"><!--get the different types of lines of business--></select>
+    <br>
+    <input type = "submit" value = "Generate Report" name ="generateR3"><!--generate report #client with highest # of contract in tjat line of business-->
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+<footer>
+    Managed by AITS all rigths reserved
+</footer>
+</body>
+</html>

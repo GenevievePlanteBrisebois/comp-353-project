@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Information</title><style>
+
+    footer {
+        clear: both;
+        position:relative;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+    }
+</style>
+</head>
+<body>
+<h1>Client Information</h1>
+
+<fieldset>
+    <!-- will need to be populated using php-->
+    <legend><h3>Personal Information</h3></legend>
+    First Name:<br>
+    <br>
+    Middle Initial: <br>
+    <br>
+    Last Name: <br>
+    <br>
+    Username:<br>
+    <br>
+    City:<br>
+    <br>
+    Province: <br>
+    <br>
+    Postal Code:<br>
+    <br>
+    Phone Number:<br>
+    <br>
+    Email:<br>
+    <br>
+
+</fieldset>
+
+<fieldset>
+    <legend><h3>Contract List</h3></legend>
+    List of all contracts that have been signed with the company:<br>
+   <table border = "1px">
+       <tr>
+           <th width = "16.67%">Contract Number</th>
+           <th width = "16.67%">Lead Manager</th>
+           <th width = "16.67%">Start Date</th>
+           <th width = "16.67%">Status</th>
+       </tr>
+       <!--populate with php, make the contract numbers clickables so that when we click on it it leads to either another page or makes the following fieldset appear-->
+   </table>
+
+
+
+</fieldset>
+
+<fieldset>
+    <legend><h3>Contract Information</h3></legend>
+    Contract Number:<br>
+    <br>
+    Annual Contract Value:<br>
+    <br>
+    Initial Amount:<br>
+    <br>
+    Service Type:<br>
+    <br>
+    Contract Type: <br>
+    <br>
+    Deliverables:<br>
+    <table>
+        <!-- will be populated with php-->
+    </table>
+    <br>
+    Lead Manager:<br>
+    <br>
+    Average Score of Lead Manager:<br>
+    <br>
+    Status of Project:<br>
+    <br>
+    <!--make it so that the client can only rate if the completion status is set to be completed-->
+    Satisfaction Score for this project:<br>
+    <input type = "number" name = "score" ><br>
+    <input type  = "submit" name  = "score" value ="Rate"><br>
+
+</fieldset>
+
+<footer>
+    Managed by AITS all rights reserved
+</footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>EmployeeMain</title>
+    <style>
+
+        footer {
+            position:absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<h1>Employee Information</h1>
+    <fieldset>
+        <!-- will need to be populated using php-->
+        <legend><h3>Personnal Information</h3></legend>
+        First Name:<br>
+        <br>
+        Middle Initial: <br>
+        <br>
+        Last Name: <br>
+        <br>
+        Username:<br>
+        <br>
+        City:<br>
+        <br>
+        Province: <br>
+        <br>
+        Postal Code:<br>
+        <br>
+
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend><h3>Insurance Information</h3></legend>
+        Insurance Plan:<br>
+        <!--get information from database, manager can change that information--> <br>
+        Current amount reimbursed:<br>
+        <!-- get information from php, default value 0 -->
+        <br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend><h3>Work Information</h3></legend>
+            Hours per month:<br>
+            <br><!-- get information with php -->
+            Contract Preferences:<br>
+                <select name "contract_pref" ><br>
+                    <!-- populate using php--><br>
+            <input type = "submit" value = "select"><br>
+            Contracts Currently Assigned To:<br>
+                <!-- implement a dynamic table using php-->
+
+
+
+
+    </fieldset>
+
+<footer>
+    Managed by AITS all rights reserved
+</footer>
+</body>
+</html>

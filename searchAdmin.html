@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search<title>Search</title>
+        <style>
+            footer {
+                position:absolute;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        </style>
+        </head>
+<body>
+<h1>Search for existing contract</h1>
+<nav><table style = "width: 100%">
+    <tr>
+        <th style = "width: 25%"><a href = "adminMain.html">Personal Information</a></th>
+        <th style = "width: 25%"><a href = "adminEmployeeManagement.html">Employee Management</a></th>
+        <th style = "width: 25%"><a href = "adminContractManagement.html">Contract Management</a></th>
+        <th style = "width: 25%"><a href = "adminReports.html">Reports</a></th>
+    </tr>
+</table></nav>
+<fieldset>
+    <legend><h3>Search by contract number and username</h3></legend>
+    Contract Number: <br>
+    <input type = "number" name = "contract_num" ><br>
+    Username:<br>
+    <input type ="text" name = "username"><br><br>
+
+
+    <input type = "submit" name = "searchButton" value = "Search"><br>
+</fieldset>
+
+<fieldset>
+    <legend><h3>Search by line of business</h3></legend>
+
+    Select Line of business:<br>
+    <select size="5"></select><br>
+    <input type  = "submit" name = "lineBusiReport" value="search"><br>
+</fieldset>
+
+<fieldset>
+    <legend><h3>Search by Contract Specifications</h3></legend>
+    Select Completion Date: <br>
+    <input type = "radio" value = "On time" name = "completionStatus">On time<br>
+    <input type = "radio" value = "late" name = "completionStatus"> Late <br>
+    <input type  = "radio" value = "null" name = "completionStatus"> NA <br>
+    Select a contract type:<br>
+    <select>
+        <!--will be populated with the information from the db-->
+    </select><br>
+    Select the number of employees working on the project:<br>
+    <input type = ="number" name = "numberEmployee" ><br>
+
+    Select Employee Insurance Plan Type:
+    <br>
+    <select size = "2"></select><br>
+    <!--do not forget to add the option of not available in order to allow to seach without that particular criteria-->
+    <input type = "submit" value = "search"><br>
+</fieldset>
+
+
+
+
+<footer>
+    Managed by AITS all rights reserved
+</footer>
+</body>
